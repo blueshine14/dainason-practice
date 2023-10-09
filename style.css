@@ -1,0 +1,39 @@
+section {
+    max-width: 1100px;
+    margin: 0 auto; 
+}
+
+
+.tilte { /*クラス名の際は、.がいる*/
+    font-size: 40px;  /* 文字のサイズを変える */
+}
+.subtitle{
+    font-size: 20px;
+}
+
+.about_text_container {
+    font-size: 20px;
+    font-weight: bold; /*文字のフォントの大きさ*/
+    margin-bottom: 64px;/* margin:箱の外の余白 
+                            上：top
+                            下:bottom
+                            右:right
+                            左:left
+                            5,10→上下、右左
+                            5,10,15,20→上右左下*/
+
+
+}
+.about_card { /*文字列の長さを30％にする*/
+    width: 30%;
+}
+
+.about_card .about_card_title {
+    text-align: center;
+}
+
+.about_card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

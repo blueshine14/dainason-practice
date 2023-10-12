@@ -4,17 +4,23 @@ section {
 }
 
 
-.tilte { /*クラス名の際は、.がいる*/
-    font-size: 40px;  /* 文字のサイズを変える */
+.title { /*クラス名の際は、.がいる*/
+    font-size: 48px;  /* 文字のサイズを変える */
+    font-weight: bold;
+    margin-bottom: -30px;
+    
 }
 .subtitle{
     font-size: 20px;
+    font-weight: bold;
 }
 
+
+
 .about_text_container {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold; /*文字のフォントの大きさ*/
-    margin-bottom: 64px;/* margin:箱の外の余白 
+    margin-bottom: 128px;/* margin:箱の外の余白 
                             上：top
                             下:bottom
                             右:right
@@ -22,6 +28,12 @@ section {
                             5,10→上下、右左
                             5,10,15,20→上右左下*/
 
+
+}
+
+.about_m_text_container {
+    font-size:14px;
+    margin-bottom: 64px;
 
 }
 .about_card { /*文字列の長さを30％にする*/
@@ -36,4 +48,40 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.center {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 84px;
+    margin-bottom: 84px;
+
+}
+
+.about_center_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.line img{
+    display: flex;
+    width: 550;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.about_center {
+    margin-bottom: 64px;
+}
+
+
+.about_person_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about_person {
+    margin-bottom: 64px;
 }

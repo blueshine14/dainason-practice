@@ -1,41 +1,90 @@
-section {
+.section{
     max-width: 1100px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
+.bigbig_container {
+    margin-bottom: 200px;
+}
+.class{
+    margin-bottom: 50px;
+}
 
-.title { /*クラス名の際は、.がいる*/
-    font-size: 48px;  /* 文字のサイズを変える */
+.title{
+    font-size: 48px; /*文字の大きさを調整する*/
+    line-height : 0;
     font-weight: bold;
-    margin-bottom: -30px;
-    
+    margin-bottom: 0px;
 }
+
 .subtitle{
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
 }
 
 
+.news_container{
+    margin-top: 50px;
+    text-align: center;
+}
 
-.about_text_container {
+.under{
+    margin-left: 120px;
+    margin-right: 100px;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 1px;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    flex-wrap: wrap;
+}
+.day{
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.news1{
+    font-weight: bold;
+    margin-left: 68px;
+}
+
+.news2{
+    font-weight: bold;
+    margin-left: 114px;
+}
+
+.read_more_container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 20px; 
+}
+.read_more{
+    font-weight: bold;
+    line-height: 0;
+    margin-top: 20px;
+}
+
+.stickarrow {
+    width: 105px;
+    height: 5px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: skew(45deg);
+  }
+
+  .about_text_big_container {
     font-size: 28px;
-    font-weight: bold; /*文字のフォントの大きさ*/
-    margin-bottom: 128px;/* margin:箱の外の余白 
-                            上：top
-                            下:bottom
-                            右:right
-                            左:left
-                            5,10→上下、右左
-                            5,10,15,20→上右左下*/
-
-
+    font-weight: bold; 
+    margin-bottom: 100px;
 }
 
-.about_m_text_container {
-    font-size:14px;
+  .about_text_container {
+    font-size: 15px;
     margin-bottom: 64px;
-
 }
+
 .about_card { /*文字列の長さを30％にする*/
     width: 30%;
 }
@@ -49,39 +98,84 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.center {
-    font-size: 30px;
+
+
+.section2{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.about_dainason{
+    margin-top: 150px; 
+}
+
+.about_text_word{
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
-    margin-top: 84px;
-    margin-bottom: 84px;
-
 }
 
-.about_center_container {
+.picture{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+.left_class img{
+    text-align: left;
+    width: 250px;
+    height: auto;
+}
+.line_class img{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 550px;
+    height: auto;
+}
+
+.right_class img{
+    text-align: right;
+    width: 250px;
+    height: auto;
+}
+
+.about_card_p img{
+    width: 290px;
+    height: auto;
+    margin-top: 60px; 
+}
+
+.about_event_container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.line img{
+.about_event img{
+    width: 230px;
+    height: auto;
+    margin-top: 150px; 
+}
+.indicator {
     display: flex;
-    width: 550;
-    height: 100px;
-    margin-top: 40px;
+    justify-content: center;
+    margin-top: 17px;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
-.about_center {
-    margin-bottom: 64px;
-}
-
-
-.about_person_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.about_person {
-    margin-bottom: 64px;
-}
+.dot_active {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #1c1a18;
+    border-radius: 50%; 
+  }

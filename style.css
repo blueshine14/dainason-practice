@@ -1,11 +1,8 @@
-.section1 {
-    max-width: 1300px;
-    margin:0 auto;
-    display: flex; 
-    justify-content: space-between; 
-}
 
 header {
+    max-width: 1300px;
+    margin:0 auto;
+    justify-content: space-between; 
     display: flex;
     align-items: center;
 }
@@ -26,9 +23,6 @@ header a {
     font-weight: bold;
 }
 
-.first {
-    margin-right: 20px;
-}
 
 .line img {
     width: 200px;
@@ -38,6 +32,7 @@ header a {
 .total {
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 
 
@@ -45,11 +40,9 @@ header a {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-.main_title {
-    margin-top: 125px;
-}
 
 .large {
     font-size: 40px;
@@ -104,16 +97,22 @@ header a {
 .day{
     font-weight: bold;
     margin-left: 30px;
+    text-decoration: none;
+    color: #000;
 }
 
 .news1{
     font-weight: bold;
     margin-left: 68px;
+    text-decoration: none;
+    color: #000;
 }
 
 .news2{
     font-weight: bold;
     margin-left: 114px;
+    text-decoration: none;
+    color: #000;
 }
 
 .read_more_container{
@@ -122,11 +121,15 @@ header a {
     flex-direction: column;
     align-items: center;  
     margin-top: 20px; 
+    text-decoration: none;
+    color: #000;
 }
 .read_more{
     font-weight: bold;
     line-height: 0;
     margin-top: 20px;
+    text-decoration: none;
+    color: #000;
 }
 
 .stickarrow {
@@ -135,6 +138,7 @@ header a {
     border-bottom: 2px solid #000;
     border-right: 2px solid #000;
     transform: skew(45deg);
+    margin-top: 5px;
   }
 
   .about_text_big_container {
@@ -180,26 +184,24 @@ header a {
 }
 
 .picture{
-    display: flex;
-    justify-content: flex-start; 
+    display: flex; 
     align-items: center; 
     flex-wrap: wrap;
 }
 .left_class img{
     text-align: left;
-    width: 250px;
     height: auto;
 }
 .line_class img{
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 550px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 120%;
     height: auto;
 }
 
 .right_class img{
     text-align: right;
-    width: 250px;
+    margin-left:170px;
     height: auto;
 }
 
@@ -225,23 +227,75 @@ header a {
     justify-content: center;
     margin-top: 17px;
 }
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+     margin:0 auto;
+ }
+ 
+ .slider img {
+     width:100%;/*スライダー内の画像を横幅100%に*/
+     height:auto;
+ }
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+ .slider .slick-slide {
+     margin:0 10px;
+ }
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+     position: absolute;/*絶対配置にする*/
+     top: 42%;
+     cursor: pointer;/*マウスカーソルを指マークに*/
+     outline: none;/*クリックをしたら出てくる枠線を消す*/
+     border-top: 2px solid #666;/*矢印の色*/
+     border-right: 2px solid #666;/*矢印の色*/
+     height: 15px;
+     width: 15px;
+ }
+ 
+ .slick-prev {/*戻る矢印の位置と形状*/
+     left: -1.5%;
+     transform: rotate(-135deg);
+ }
+ 
+ .slick-next {/*次へ矢印の位置と形状*/
+     right: -1.5%;
+     transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+    text-align: center;
+    margin: 20px 70px 0 0;
 }
 
-.dot_active {
-    height: 10px;
-    width: 10px;
+.slick-dots li {
+    display: inline-block;
     margin: 0 5px;
-    background-color: #1c1a18;
+}
+
+.slick-dots button {
+    color: transparent;
+    border: none;
+    outline: none;
+    width: 12px; 
+    height: 12px; 
+    display: block;
     border-radius: 50%; 
-  }
+    background: #ccc; 
+}
+
+ 
+ .slick-dots .slick-active button{
+     background:#333;
+ }
 
   .background {
     width: 1100px; 
